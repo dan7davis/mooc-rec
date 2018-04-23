@@ -1,0 +1,20 @@
+<script src="/static/newSensor.js"></script>
+
+<script> 
+    $(function(){
+      $("#includedContent").load("/static/vertHTML.html"); 
+    });
+</script> 
+  
+
+<body> 
+   <div id="includedContent"></div>
+    <p style="display: none" class=getID>%%USER_ID%%</p>
+</body> 
+
+<script>
+  
+  var hashed = $(".getID").text();
+	anonID = parseInt(hashed, 16);
+  
+</script>
